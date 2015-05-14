@@ -1,5 +1,5 @@
 require('common/alerts/alerts');
-require('./directives/widget.js');
+require('common/widget/widget');
 
 module.exports = {
     url: '',
