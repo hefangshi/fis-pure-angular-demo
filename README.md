@@ -20,7 +20,6 @@ git clone https://github.com/hefangshi/pure-angular-demo
 cd pure-angular-demo
 
 # bower安装依赖
-
 bower install
 
 # 使用FIS编译DEMO
