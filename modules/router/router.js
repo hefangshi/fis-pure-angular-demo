@@ -6,15 +6,13 @@ var tables = require('pages/tables/tables');
 /**
  * Route configuration for the RDash module.
  */
-angular.module('RDash').config(['$stateProvider', '$urlRouterProvider',
-    function ($stateProvider, $urlRouterProvider) {
+angular.module('RDash').config(function ($stateProvider, $urlRouterProvider) {
 
-        // For unmatched routes
-        $urlRouterProvider.otherwise('/');
+    // For unmatched routes
+    $urlRouterProvider.otherwise('/');
 
-        // Application routes
-        $stateProvider
-            .state('index', dashboard)
-            .state('tables', tables);
-    }
-]);
+    // Application routes
+    $stateProvider
+        .state('index', dashboard)
+        .state('tables', tables);
+});
