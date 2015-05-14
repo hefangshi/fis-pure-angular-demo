@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en" ng-app="RDash">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Pure Angular Demo</title>
+        <script type="text/javascript" src="/lib/mod.js"></script>
+        <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="/bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="/bower_components/rdash-ui/dist/css/rdash.css">
+        <script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script type="text/javascript" src="/bower_components/angular-cookies/angular-cookies.js"></script>
+        <script type="text/javascript" src="/bower_components/ui-router/release/angular-ui-router.js"></script>
+        <!--RESOURCEMAP_PLACEHOLDER-->
+        <!--SCRIPT_PLACEHOLDER-->
+    </head>
+    <body ng-controller="MasterCtrl">
+        <div id="page-wrapper" ng-class="{'open': toggle}" ng-cloak>
+            <!-- Sidebar -->
+            <link rel="import" href="/modules/partial/sidebar/sidebar.html?__inline"/>
+            <!-- End Sidebar -->
+            <div id="content-wrapper">
+                <div class="page-content">
+                    <!-- Header Bar -->
+                    <link rel="import" href="/modules/partial/header/header.html?__inline"/>
+                    <!-- End Header Bar -->
+                    <!-- Main Content -->
+                    <div ui-view></div>
+                </div><!-- End Page Content -->
+            </div><!-- End Content Wrapper -->
+        </div><!-- End Page Wrapper -->
+    </body>
+    <script type="text/javascript">
+        require('main');
+    </script>
+</html>
