@@ -1,4 +1,4 @@
 module.exports = {
-    url: '/',
+    url: '/tables',
     template: __inline('./tables.html')
 };
