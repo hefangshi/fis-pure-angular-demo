@@ -8,7 +8,9 @@ pure-angular-demo
 npm i -g fis-pure
 
 # 下载demo
-bower install pure-angular-demo
+git clone https://github.com/hefangshi/pure-angular-demo
+
+cd pure-angular-demo
 
 # 使用FIS编译DEMO
 pure release
