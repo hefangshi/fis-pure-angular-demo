@@ -53,7 +53,7 @@ fis.project.getSource = function () {
                     if (filePath.indexOf('*') !== -1) {
                         filePath = filePath.replace(/^\.\//, '');
                         fis.util.find(componentPath).forEach(function (file) {
-                            var relativePath = path.relative(componentPath, file);
+                            var relativePath = path.relative(componentPath, file).replace(/\\/g, '\/');
                             if (fis.util.glob(filePath, relativePath)) {
                                 files.push(fis.file(file));
                             }
